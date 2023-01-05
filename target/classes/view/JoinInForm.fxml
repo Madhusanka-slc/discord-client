@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="212.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JoinInFormController">
+   <children>
+      <VBox layoutY="64.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <FlowPane alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtIP" alignment="CENTER" focusTraversable="false" prefHeight="26.0" prefWidth="228.0" promptText="Enter server IP" />
+               </children>
+            </FlowPane>
+            <FlowPane alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtName" alignment="CENTER" focusTraversable="false" prefHeight="26.0" prefWidth="228.0" promptText="Enter your name" />
+               </children>
+            </FlowPane>
+            <FlowPane alignment="CENTER">
+               <children>
+                  <Button fx:id="btnJoinServer" defaultButton="true" mnemonicParsing="false" onAction="#btnJoinServerOnAction" prefHeight="26.0" prefWidth="95.0" text="Join Server" />
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+      <FlowPane alignment="CENTER" layoutX="177.0" layoutY="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label text="Discord Server" textFill="#9a9a4b">
+               <font>
+                  <Font name="Cantarell Extra Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="565.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <JFXListView fx:id="lstOnline" layoutX="459.0" layoutY="74.0" prefHeight="565.0" prefWidth="162.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXTextArea fx:id="txtMsg" layoutX="47.0" layoutY="416.0" prefHeight="99.0" prefWidth="276.0" promptText="Enter Message" />
+      <JFXButton fx:id="btnSend" layoutX="372.0" layoutY="502.0" onAction="#btnSendOnAction" style="-fx-background-color: red;" text="Send" textFill="WHITE" />
+      <TextArea fx:id="txaView" layoutX="31.0" layoutY="42.0" prefHeight="288.0" prefWidth="462.0" />
+   </children>
+</AnchorPane>
